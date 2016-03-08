@@ -7,16 +7,16 @@ Small and fast JavaScript library.
 Available methods
 --------------------------------------
 
-- show()
-- hide()
+- show() - display the matched elements
+- hide() - hide the matched elements
 - css(property, value)
 - css({property: value, property: value, ...})
-- size({width: value, height: value})
-- addClass(classNames)
-- removeClass(className)
-- text()
-- text(str)
-- on(eventName, handler)
+- size({width: value, height: value}) - set new dimensions to matched elements
+- addClass(classNames) - add class names to matched elements
+- removeClass(className) - remove class name from matched element
+- text() - return inner text
+- text(str) - set inner text
+- on(eventName, handler) - event handler
 - each(callback)
 
 
