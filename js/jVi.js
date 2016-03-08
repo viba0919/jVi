@@ -1,14 +1,5 @@
 (function(window, undefined) {
 
-    /**
-     *  1.
-     *  2. Working with element inline styles
-     *  3. Events
-     *
-     *
-     *
-     */
-
     function jVi(selector) {
         if (selector === undefined) {
             return false;
@@ -41,6 +32,8 @@
 
         return this;
     }
+
+
 
     /**
      *  Mouse events:       mousedown, mouseup, click
