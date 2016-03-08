@@ -11,10 +11,31 @@ Available methods
 - hide()
 - css(property, value)
 - css({property: value, property: value, ...})
+- size({width: value, height: value})
 - addClass(classNames)
 - removeClass(className)
 - on(eventName, handler)
 - each(callback)
+
+
+Manipulation style properties
+--------------------------------------
+
+```js
+jVi('#container').css({
+    'background':   '#eee',
+    'color':        '#333'
+});
+
+jVi('#container').css('padding', '25px 30px');
+
+jVi('p').hide();
+
+jVi('#container').size({
+    width: '70%',
+    height: 'auto'
+});
+```
 
 
 Event Handling
@@ -36,22 +57,9 @@ jVi('#heading')
 	.removeClass('h-color-red');
 ```
 
-
-Manipulation style properties
+Text manipulation
 --------------------------------------
 
 ```js
-jVi('#container').css({
-    'background':   '#eee',
-    'color':        '#333'
-});
-
-jVi('#container').css('padding', '25px 30px');
-
-jVi('p').hide();
-
-jVi('#container').size({
-    width: '70%',
-    height: 'auto'
-});
+jVi('.h-hide').text('Text added with text() method').css('color', 'red');
 ```

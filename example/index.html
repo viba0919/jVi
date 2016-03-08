@@ -13,6 +13,10 @@
         .h-font-weight-normal {
             font-weight: normal;
         }
+
+        .h-hide {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -20,12 +24,13 @@
     <main id="container">
         <section class="container__h1">
             <h1 id="heading" class="h-color-red">Paragraph 1</h1>
-            <p class="aaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet animi cumque cupiditate error esse et, ipsum laboriosam maxime nobis perferendis perspiciatis placeat quos reprehenderit sed sit sunt. Facere!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet animi cumque cupiditate error esse et, ipsum laboriosam maxime nobis perferendis perspiciatis placeat quos reprehenderit sed sit sunt. Facere!</p>
+            <p class="h-hide">Illo officia sequi vel. Accusamus alias aliquam explicabo illo ipsum possimus provident quae sint suscipit voluptates?</p>
         </section>
 
         <section>
             <h2 class="container__h2">Paragraph 2</h2>
-            <p class="aaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, beatae, sint? Autem explicabo pariatur repudiandae? Consectetur consequatur consequuntur corporis, cupiditate ea error esse et eveniet expedita ipsum iure iusto laudantium neque perspiciatis placeat quas qui quibusdam quisquam rerum similique sint sunt velit veniam veritatis, voluptatem? Illo officia sequi vel. Accusamus alias aliquam explicabo illo ipsum possimus provident quae sint suscipit voluptates? Beatae enim iure non porro! At, blanditiis culpa doloremque ducimus eius excepturi exercitationem ipsam magnam, modi nostrum odit omnis perspiciatis quae quaerat quidem quis quisquam, ratione vero! Accusantium asperiores debitis dolorum eveniet id ipsa quisquam! Deserunt dicta eius quae.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, beatae, sint? Autem explicabo pariatur repudiandae? Consectetur consequatur consequuntur corporis, cupiditate ea error esse et eveniet expedita ipsum iure iusto laudantium neque perspiciatis placeat quas qui quibusdam quisquam rerum similique sint sunt velit veniam veritatis, voluptatem? Illo officia sequi vel. Accusamus alias aliquam explicabo illo ipsum possimus provident quae sint suscipit voluptates? Beatae enim iure non porro! At, blanditiis culpa doloremque ducimus eius excepturi exercitationem ipsam magnam, modi nostrum odit omnis perspiciatis quae quaerat quidem quis quisquam, ratione vero! Accusantium asperiores debitis dolorum eveniet id ipsa quisquam! Deserunt dicta eius quae.</p>
         </section>
 
         <button id='button'>Press</button>
@@ -54,13 +59,19 @@
 
         jVi('#container').css('padding', '25px 30px');
 
-        jVi('p').hide();
+        jVi('.h-hide').show();
 
         jVi('#container').size({
             width: '70%',
             height: 'auto'
         });
 
+
+        // Text manipulation
+        jVi('.h-hide').text('Text added with text() method').css('color', 'red');
+        
+        var getText = jVi('#container').text();
+        console.log('getText = ', getText);
     </script>
 </body>
 </html>

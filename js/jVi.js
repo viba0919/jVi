@@ -132,7 +132,7 @@
 
 
     /**
-     *  Hide element
+     *  Change element size
      *
      * @returns {jVi}
      */
@@ -141,11 +141,30 @@
             if (obj.width !== undefined) {
                 this.style.width = obj.width;
             }
-            
+
             if (obj.height !== undefined) {
                 this.style.height = obj.height;
             }
         });
+    };
+
+
+
+
+
+    /**
+     *  Change or return element text
+     *
+     * @returns {jVi}
+     */
+    jVi.prototype.text = function(str) {
+        if (str !== undefined) {
+            return this.each(function() {
+                this.innerText = str;
+            });
+        }
+
+        return this.length && this[0].innerText;
     };
 
 
