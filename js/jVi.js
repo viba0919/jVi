@@ -132,6 +132,26 @@
 
 
     /**
+     *  Hide element
+     *
+     * @returns {jVi}
+     */
+    jVi.prototype.size = function(obj) {
+        return this.each(function() {
+            if (obj.width !== undefined) {
+                this.style.width = obj.width;
+            }
+            
+            if (obj.height !== undefined) {
+                this.style.height = obj.height;
+            }
+        });
+    };
+
+
+
+
+    /**
      *  Adds inline css rules
      *  Rule argument can be object
      *

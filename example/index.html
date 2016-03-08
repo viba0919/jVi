@@ -48,10 +48,18 @@
         // Manipulation style properties
         jVi('#container').css({
             'background':   '#eee',
-            'color':        '#333'
+            'color':        '#333',
+            'margin':       'auto'
         });
 
         jVi('#container').css('padding', '25px 30px');
+
+        jVi('p').hide();
+
+        jVi('#container').size({
+            width: '70%',
+            height: 'auto'
+        });
 
     </script>
 </body>
