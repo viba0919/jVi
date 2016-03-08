@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jVi</title>
+    <script src="js/jVi.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <main class="container">
+        <section class="container__h1">
+            <h1>Paragraph 1</h1>
+            <p class="aaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet animi cumque cupiditate error esse et, ipsum laboriosam maxime nobis perferendis perspiciatis placeat quos reprehenderit sed sit sunt. Facere!</p>
+        </section>
+
+        <section>
+            <h2 class="container__h2">Paragraph 2</h2>
+            <p class="aaa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, beatae, sint? Autem explicabo pariatur repudiandae? Consectetur consequatur consequuntur corporis, cupiditate ea error esse et eveniet expedita ipsum iure iusto laudantium neque perspiciatis placeat quas qui quibusdam quisquam rerum similique sint sunt velit veniam veritatis, voluptatem? Illo officia sequi vel. Accusamus alias aliquam explicabo illo ipsum possimus provident quae sint suscipit voluptates? Beatae enim iure non porro! At, blanditiis culpa doloremque ducimus eius excepturi exercitationem ipsam magnam, modi nostrum odit omnis perspiciatis quae quaerat quidem quis quisquam, ratione vero! Accusantium asperiores debitis dolorum eveniet id ipsa quisquam! Deserunt dicta eius quae.</p>
+        </section>
+
+        <button>Press</button>
+    </main>
+
+    <script type="text/javascript">
+        jVi('body').css({
+            lineHeight: '20px',
+            fontSize:   '14px',
+            backgroundColor: '#fffffe'
+        });
+
+        jVi('p').addClass('one two').css({'color': 'red', fontSize: '12px'});
+
+        // jVi('html').on('click',         function() {console.log('click');});
+        // jVi('html').on('dblclick',      function() {console.log('dblclick');});
+        // jVi('html').on('contextmenu',   function() {console.log('contextmenu');});
+        // jVi('html').on('wheel',         function() {console.log('wheel');});
+
+        jVi('button').on('click', function() {
+            this.addClass('Red');
+        });
+    </script>
+</body>
+</html>
