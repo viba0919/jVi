@@ -49,8 +49,6 @@
 
 
 
-
-
     /**
      *  Each
      */
@@ -67,7 +65,6 @@
 
 
 
-
     /**
      *  Adds class names
      *
@@ -78,7 +75,6 @@
             this.className += ' ' + classNames;
         });
     };
-
 
 
 
@@ -95,7 +91,6 @@
 
 
 
-
     /**
      *  Show element
      *
@@ -109,7 +104,6 @@
 
 
 
-
     /**
      *  Hide element
      *
@@ -120,7 +114,6 @@
             this.style.display = 'none';
         });
     };
-
 
 
 
@@ -143,8 +136,6 @@
 
 
 
-
-
     /**
      *  Change or return element text
      *
@@ -159,7 +150,6 @@
 
         return this.length && this[0].innerText;
     };
-
 
 
 
@@ -186,6 +176,7 @@
             }
         });
     };
+
 
     window.jVi = jVi;
 
