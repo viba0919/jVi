@@ -18,9 +18,9 @@ Method chaining
 
 ```js
 jVi('#heading')
-	.css('fontSize': '24px')
-	.addClass('some-class-name')
-	.removeClass('other-class-name');
+	.css('fontSize', '24px')
+	.addClass('h-font-weight-normal')
+	.removeClass('h-color-red');
 ```
 
 

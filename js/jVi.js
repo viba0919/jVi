@@ -90,6 +90,20 @@
 
 
     /**
+     *  Remove class name
+     *
+     * @returns {jVi}
+     */
+    jVi.prototype.removeClass = function(className) {
+        return this.each(function() {
+            this.className = this.className.replace(new RegExp('(?:^|s)' + className + '(?!S)'), '');
+        });
+    };
+
+
+
+
+    /**
      *  Show element
      *
      * @returns {jVi}
