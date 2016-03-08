@@ -1,13 +1,13 @@
-[jVi] — small and fast JavaScript library
+jVi
 ==================================================
 
+Small and fast JavaScript library.
 
-What you need to build your own jQuery
+
+Event Handling
 --------------------------------------
 
-# Event Handling
---------------------------------------
-```
+```js
 jVi('#button').on('click', function() {
     jVi('body').css({'background': '#eee'});
 });
