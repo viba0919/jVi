@@ -14,6 +14,8 @@ Available methods
 - size({width: value, height: value})
 - addClass(classNames)
 - removeClass(className)
+- text()
+- text(str)
 - on(eventName, handler)
 - each(callback)
 
